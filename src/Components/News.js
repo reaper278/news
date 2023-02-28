@@ -90,15 +90,15 @@ setTotal(parsedata.totalResults)
           {loading && <Loader></Loader>}
           <div width="container ">
           <InfiniteScroll
-          dataLength={article.length}
+          dataLength={article?.length}
           next={fetchMoreData}
-          hasMore={article.length !== total}
+          hasMore={article?.length !== total}
           loader={<Loader/>}
           >
        <div className="container " style={{marginTop:"70px"}}>
             <div className="row ">
             {
-              article.map((element) => {
+              article?.map((element) => {
                 return (
                   <div
                     className="col-md-4 "
