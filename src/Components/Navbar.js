@@ -39,11 +39,9 @@ const Navbar=()=> {
               </li>
 
              <li className="nav-item">
-              <Link className="nav-link" to="/login">Login</Link>
+              <Link className="nav-link" to="/login">Login/Signup</Link>
              </li>
-             <li className="nav-item">
-              <Link className="nav-link" to="/signup">Signup</Link>
-             </li>
+             
             </ul>
             <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>

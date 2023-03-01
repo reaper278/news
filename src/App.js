@@ -7,6 +7,7 @@ import News from './Components/News';
 
 
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Login from './Components/Login';
 
 
  const App=()=>  {
@@ -45,6 +46,7 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
                 <Route exact path="/science"  element={ <News setProgress={setProgress} apiKey={apiKey}  page_size={5} key="science" category="science"/>} />
                 <Route exact path="/sports"  element={ <News setProgress={setProgress} apiKey={apiKey}  page_size={5} key="science"  category="sports"/>} />
                 <Route exact path="/technology"  element={ <News setProgress={setProgress} apiKey={apiKey}  page_size={5} key="technology"  category="technology"/>} />
+                <Route exact path="/login" element={<Login></Login>}/>
         
            
 
